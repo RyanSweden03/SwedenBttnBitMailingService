@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  swedenbttnbit:
+    image: ${DOCKER_REGISTRY-}swedenbttnbit
+    build:
+      context: .
+      dockerfile: SwedenBttnBit/Dockerfile
