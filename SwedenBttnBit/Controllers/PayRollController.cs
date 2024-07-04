@@ -223,7 +223,8 @@ namespace SwedenBttnBit.Controllers
             SendEmailWithAttachment("ryansweden123@gmail.com", "Payroll", "Payroll", file, namefile);
 
 
-            return File(file, "application/pdf", namefile);
+            // return true if the email was sent
+            return Ok(true);
 
         }
         private void SendEmailWithAttachment(string toEmail, string subject, string body, byte[] fileContent, string fileName)
